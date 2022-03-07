@@ -116,11 +116,148 @@ class HomePage extends StatelessWidget {
     );
   }
 
+  Widget listTile(IconData icon, String title) {
+    return ListTile(
+      leading: Icon(
+        icon,
+        size: 30,
+      ),
+      title: Text(
+        title,
+        style: TextStyle(color: Colors.black),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xffcbcbcb),
-      drawer: const Drawer(),
+      drawer: Drawer(
+        child: Container(
+          color: Colors.grey[400],
+          child: ListView(
+            children: [
+              DrawerHeader(
+                child: Row(
+                  children: [
+                    const CircleAvatar(
+                      backgroundColor: Colors.white54,
+                      radius: 44,
+                      child: CircleAvatar(
+                        radius: 40,
+                        backgroundColor: Colors.red,
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Text('Welcome User'),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        Container(
+                          height: 30,
+                          child: OutlinedButton(
+                            style: OutlinedButton.styleFrom(
+                              side: BorderSide(
+                                  color: Colors.green.shade900, width: 2),
+                              primary: Colors.black,
+                              shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(15)),
+                              ),
+                              elevation: 2,
+                            ),
+                            child: Text('Login'),
+                            onPressed: () {},
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
+              listTile(
+                Icons.home_outlined,
+                "Home",
+              ),
+              listTile(
+                Icons.shop_outlined,
+                "Rivew Cart",
+              ),
+              listTile(
+                Icons.person_outlined,
+                "My Profile",
+              ),
+              listTile(
+                Icons.notifications_outlined,
+                "Notification",
+              ),
+              listTile(
+                Icons.star_outlined,
+                "Rating and Riview",
+              ),
+              listTile(
+                Icons.favorite_outlined,
+                "Wishlist",
+              ),
+              listTile(
+                Icons.copy_outlined,
+                "Raise and Complaint",
+              ),
+              listTile(
+                Icons.format_quote_outlined,
+                "FAQs",
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text('Contact Support'),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        children: const [
+                          Text('Call us:'),
+                          SizedBox(
+                            width: 20,
+                          ),
+                          Text(
+                            '0123456789',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        children: const [
+                          Text('Mail us:'),
+                          SizedBox(
+                            width: 20,
+                          ),
+                          Text(
+                            'ismail@gmail.com',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: const Color.fromARGB(255, 10, 104, 26),
