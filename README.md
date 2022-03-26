@@ -1,16 +1,9 @@
 # food_app
 
 A new Flutter project.
+It's Food Shop app ui i have started to build.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![1d1332b4-eac3-4fc8-8103-7fa97d19e8d9](https://user-images.githubusercontent.com/73167399/160253131-afc5ab6e-82e8-4f7d-af1c-d4fc11474990.jpg)
+![photo1648320400 (1)](https://user-images.githubusercontent.com/73167399/160253142-acb568ed-e38d-43e1-9faf-83fb5e3e5089.jpeg)
+![photo1648320400 (2)](https://user-images.githubusercontent.com/73167399/160253145-dce99820-99bf-4bc2-bbef-c8a370ca8a86.jpeg)
